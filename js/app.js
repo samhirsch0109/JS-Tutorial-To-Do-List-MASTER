@@ -26,3 +26,6 @@ document.addEventListener("keyup",function(event){
         input.value = "";
     }
 });
+
+let LIST = []
+let id = 0
