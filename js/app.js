@@ -28,4 +28,13 @@ document.addEventListener("keyup",function(event){
 });
 
 let LIST = []
-let id = 0
+let id = 0;
+
+LIST[0] ->
+{
+    name : "Drink Coffe",
+    id : 0,
+    done : false,
+    trash : false
+}
+LIST[1] ->
