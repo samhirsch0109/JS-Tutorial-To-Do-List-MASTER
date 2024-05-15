@@ -13,7 +13,16 @@ const text = `<li class="item">
 const position = "beforeend";
 list.insertAdjacentHTML(position, text);
 }
-const input = document.getElementById("input")
-
 const element = document.getElementById("element")
 
+const input = document.getElementById("input");
+
+document.addEventListener("keyup",function(event){
+    if( event.keyCode == 13){
+        const toDo = input.value;
+        if(toDo){
+            addToDo(toDo)
+        }
+        input.value = "";
+    }
+});
