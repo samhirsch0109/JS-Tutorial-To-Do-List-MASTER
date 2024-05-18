@@ -3,6 +3,15 @@ const clear = document.querySelector(".clear");
 const dateElement = document.getElementById("date");
 
 const list = document.getElementById("list");
+list.addEventListener("click", function(event) {
+    let element = event.target; // <i class=de fa fa-trash-0" job="delete" id="0"></li>
+    const elementJOB = event.target.attributes.job.value; //delete or complete
+    if(elementJOB == "complete") {
+        completeToDo(element);
+    }else if(elementJOB == "delete"){
+        removeToDo();
+    }
+    });
 
 
 const CHECK = "fa-check-circle";
